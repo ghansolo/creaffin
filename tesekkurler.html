@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Randevunuz Onaylandı | Creaffin</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.svg">
+  	<!-- Facebook Meta Tags -->
+    <meta name="description" content="Hastalarınza odaklanırken dijital varlığınızı yönetmek zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://creaffin.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Creaffin | Doktorlar için Profesyonel Web Sitesi ve Randevu Odaklı Pazarlama">
+    <meta property="og:description" content="Hastalarınza odaklanırken dijital varlığınızı yönetmek zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz.">
+    <meta property="og:image" content="https://creaffin.com/images/og-image.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="creaffin.com">
+    <meta property="twitter:url" content="https://creaffin.com">
+    <meta name="twitter:title" content="Creaffin | Doktorlar için Profesyonel Web Sitesi ve Randevu Odaklı Pazarlama">
+    <meta name="twitter:description" content="Hastalarınza odaklanırken dijital varlığınızı yönetmek zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz.">
+    <meta name="twitter:image" content="https://creaffin.com/images/og-image.png">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Set up the base fonts.
+       "Andale Mono" is used for the body.
+       The class .font-instrument-serif is applied to headings.
+       Replace the fallback with your actual "Instrument Serif" font if available.
+    */
+    body {
+      font-family: 'Andale Mono', monospace;
+    }
+    .font-instrument-serif {
+      font-family: 'Times New Roman', serif;
+    }
+
+    /* Rainbow glow animation for button */
+    @keyframes shimmer {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .rainbow-glow {
+      background-color: black;
+      position: relative;
+    }
+
+    .rainbow-glow::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;  /* Position it below the button */
+      height: 20px;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.7),
+        rgba(255, 165, 0, 0.7),
+        rgba(255, 255, 0, 0.7),
+        rgba(0, 128, 0, 0.7),
+        rgba(0, 0, 255, 0.7),
+        rgba(128, 0, 128, 0.7),
+        rgba(255, 0, 0, 0.7)
+      );
+      background-size: 200% 100%;
+      filter: blur(15px);
+      border-radius: 50%;
+      animation: shimmer 6s infinite linear;
+      z-index: -1;
+      opacity: 0.7;
+    }
+  </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '701030085732541');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=701030085732541&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="max-w-3xl mx-auto px-6 sm:px-6 py-6 sm:py-12 text-sm text-[#7D7D7D]">
+
+  <main>
+    <header class="mb-8 sm:mb-12">
+      <nav class="flex items-center justify-between max-w-3xl mx-auto py-4">
+        <a href="/" class="flex items-center space-x-2"> <!-- Link to homepage -->
+          <!-- Logo image; replace src with your logo file -->
+          <img src="images/logo.svg" alt="Logo" class="hover:animate-pulse rotate-12 mr-2" width="25" height="25" />
+          <h2 class="font-instrument-serif text-2xl text-black">Creaffin</h2>
+        </a>
+      </nav>
+    </header>
+
+    <div class="mb-12 sm:mb-16 space-y-6 sm:space-y-8 max-w-xl text-center mx-auto">
+      <h1 class="font-instrument-serif text-[28px] sm:text-3xl md:text-4xl text-black font-normal leading-tight">
+        Randevunuz Başarıyla Oluşturuldu!
+      </h1>
+      <p class="mt-4 sm:mt-6 text-base">
+        Görüşme talebiniz için teşekkür ederiz. Randevu detaylarınız belirttiğiniz e-posta adresine gönderildi.
+        <br /><br />
+        Lütfen tahmini 15 dakika sürecek olan ön görüşmemizi takviminize kayıt ettiğinizden emin olun, ve hatırlatıcı ekleyin.<br><br> Randevu zamanında size e-posta ile gönderilen <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg" alt="Google Meet icon" class="inline-block h-4 w-4 mr-1 align-middle">Google Meet adresinde görüşmek üzere! 👋🏻
+      </p>
+      <div class="mt-8">
+        <a href="mailto:creaffin@creaffin.com"
+           class="inline-block bg-black text-white py-3 px-6 rounded-lg font-bold hover:bg-gray-800 transition-colors">
+           Sorunuz mu var? 📮
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-center text-xs text-gray-500 mt-16">
+    © 2025 Creaffin. Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
