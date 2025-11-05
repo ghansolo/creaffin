@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creaffin | Doktorlar için Profesyonel Web Sitesi ve Randevu Odaklı Pazarlama</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.svg">
+  	<!-- Facebook Meta Tags -->
+    <meta name="description" content="Hastalarınza odaklanırken dijital varlığınızı yönetmek zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://creaffin.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Creaffin | Doktorlar için Profesyonel Web Sitesi ve Randevu Odaklı Pazarlama">
+    <meta property="og:description" content="Hastalarınza odaklanırken dijital varlığınızı yönetmek zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz.">
+    <meta property="og:image" content="https://creaffin.com/images/og-image.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="creaffin.com">
+    <meta property="twitter:url" content="https://creaffin.com">
+    <meta name="twitter:title" content="Creaffin | Doktorlar için Profesyonel Web Sitesi ve Randevu Odaklı Pazarlama">
+    <meta name="twitter:description" content="Hastalarınza odaklanırken dijital varlığınızı yönetmek zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz.">
+    <meta name="twitter:image" content="https://creaffin.com/images/og-image.png">
+    
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Set up the base fonts.
+       "Andale Mono" is used for the body.
+       The class .font-instrument-serif is applied to headings.
+       Replace the fallback with your actual "Instrument Serif" font if available.
+    */
+    body {
+      font-family: 'Andale Mono', monospace;
+    }
+    .font-instrument-serif {
+      font-family: 'Times New Roman', serif;
+    }
+    
+    /* Rainbow glow animation for button */
+    @keyframes shimmer {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .rainbow-glow {
+      background-color: black;
+      position: relative;
+    }
+    
+    .rainbow-glow::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;  /* Position it below the button */
+      height: 20px;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.7),
+        rgba(255, 165, 0, 0.7),
+        rgba(255, 255, 0, 0.7),
+        rgba(0, 128, 0, 0.7),
+        rgba(0, 0, 255, 0.7),
+        rgba(128, 0, 128, 0.7),
+        rgba(255, 0, 0, 0.7)
+      );
+      background-size: 200% 100%;
+      filter: blur(15px);
+      border-radius: 50%;
+      animation: shimmer 6s infinite linear;
+      z-index: -1;
+      opacity: 0.7;
+    }
+  </style>
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '701030085732541');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=701030085732541&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body class="max-w-3xl mx-auto px-6 sm:px-6 py-6 sm:py-12 text-sm text-[#7D7D7D]">
+  
+  <!-- Hidden Skip Link (for accessibility) -->
+  <main>
+    <!-- HEADER -->
+    <header class="mb-8 sm:mb-12">
+      <nav class="flex items-center justify-between max-w-3xl mx-auto py-4">
+        <div class="flex items-center space-x-2">
+          <!-- Logo image; replace src with your logo file -->
+          <img src="images/logo.svg" alt="Logo" class="hover:animate-pulse rotate-12 mr-2" width="25" height="25" />
+          <h2 class="font-instrument-serif text-2xl text-black">Creaffin</h2>
+        </div>
+        <a href="https://cal.com/creaffin/15dk" target="_blank" rel="noopener noreferrer" 
+           class="bg-black text-white py-2 px-4 rounded-lg font-bold hover:bg-gray-800 rainbow-glow">
+           Ücretsiz Görüşme
+        </a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="mb-12 sm:mb-16 space-y-6 sm:space-y-8 max-w-xl">
+      <h1 class="font-instrument-serif text-[28px] sm:text-3xl md:text-4xl text-black font-normal leading-tight">
+        Siz Hastalarınıza Odaklanın, Dijital Varlığınızı Bize Bırakın.
+      </h1>
+      <p class="mt-4 sm:mt-6 text-base">
+        Mevcut hastalarınıza odaklanırken yeni hastalara ulaşmak zor olabilir. Biz bu süreci sizin için en iyi şekilde yapıyoruz. <br /><br />
+        Siz bize uzmanlığınızdan ve hedeflerinizden bahsedin, gerisini bize bırakın. Size özel, hastalarınızın güvenini kazanacak bir web sitesi hazırlıyor ve kanıtlanmış dijital pazarlama yöntemleriyle yeni randevular almanızı sağlıyoruz. <span class="underline">Teknik detaylarla, planlamayla uğraşmanıza gerek yok, sadece bize kendinizi anlatın.</span>
+      </p>
+    </div>
+
+    <!-- IMAGES SECTION -->
+    <div class="mb-12 flex flex-col items-center justify-center space-y-10 px-6 sm:flex-row sm:space-y-0 sm:space-x-12">
+      <!-- Left Image with rotation -->
+      <div class="relative w-full sm:w-auto">
+        <img src="images/hero-1.png" alt="Peçeteye karalanmış plan" 
+             class="rounded-lg shadow-md -rotate-6 w-[300px] h-[225px] sm:w-[400px] sm:h-[300px]" />
+        <span class="absolute left-2 top-2 bg-black bg-opacity-70 text-white text-xs py-1 px-2 rounded">
+          Sizin fikriniz
+        </span>
+      </div>
+      <!-- Right Image with rotation -->
+      <div class="relative mt-12 sm:mt-0 w-full sm:w-auto">
+        <img src="images/hero-2.png" alt="Site görseli" 
+             class="rounded-lg shadow-md rotate-3 w-[320px] h-[245px] sm:w-[500px] sm:h-[300px]" />
+        <span class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs py-1 px-2 rounded">
+          Çalışan websiteniz
+        </span>
+      </div>
+    </div>
+
+    <!-- CARDS SECTION -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+      <!-- Website Creation Card -->
+      <div class="bg-[#F8F7F5] p-6 rounded-lg">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-instrument-serif text-xl sm:text-2xl font-bold text-black">
+            Web Sitesi
+          </h2>
+          <span class="bg-white text-[#7D7D7D] text-xs font-semibold px-2 py-1 rounded-full shadow-sm">
+            14 Kontenjan
+          </span>
+        </div>
+        <p class="text-xs font-normal text-[#7D7D7D] mt-1 mb-1">İlk ay <span class="underline">25.000TL</span> kurulum ücreti</p>
+        <p class="text-2xl font-bold text-black mb-4">
+            <span class="text-sm font-normal text-[#7D7D7D]">Sonrası </span>15.000TL<span class="text-sm font-normal text-[#7D7D7D]">/ay</span>
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li>• Hem şık görünen hem de işlevsel bir web sitesi</li>
+          <li>• Sadece 2-4 hafta arasında teslim edelim</li>
+          <li>• Telefon, tablet ve bilgisayarlarda kusursuz görünür</li>
+          <li>• Tüm teknik işleri ve sitenizin giderlerini biz hallediyoruz — Siz sadece hizmetlerinizi anlatın</li>
+          <li>• Her hafta 1 blog yazısı</li>
+        </ul>
+        <a href="https://cal.com/creaffin/15dk" target="_blank" rel="noopener noreferrer" 
+           class="block w-full bg-black text-white py-3 px-4 rounded-lg font-bold hover:bg-gray-800 transition-colors text-center">
+           Dijital Kimliğinizi Oluşturalım
+        </a>
+      </div>
+      <!-- Digital Marketing Card -->
+      <div class="bg-[#F8F7F5] p-6 rounded-lg relative">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-instrument-serif text-xl sm:text-2xl font-bold text-black">
+            Dijital Pazarlama
+          </h2>
+          <span class="bg-white text-[#7D7D7D] text-xs font-semibold px-2 py-1 rounded-full shadow-sm">
+            12 Kontenjan
+          </span>
+        </div>
+        <p class="text-xs font-normal text-[#7D7D7D] mt-1 mb-1">Reklam bütçesi hariç</p>
+        <p class="text-2xl font-bold text-black mb-4">
+          15.000TL<span class="text-sm font-normal text-[#7D7D7D]">/ay</span>
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li>• Sitenizden sadece ziyaretçi değil, gerçek randevular kazanın</li>
+          <li>• Reklamlarınızı biz yönetelim — Siz hastalarınıza odaklanın</li>
+          <li>• Haftalık raporlarla gelişmeleri şeffafça takip edin</li>
+          <li>• Reklam bütçenizi birlikte belirleyelim</li>
+          <li>• Taahhüt yok — İstediğiniz zaman iptal edin</li>
+        </ul>
+        <a href="https://cal.com/creaffin/15dk" target="_blank" rel="noopener noreferrer" 
+           class="block w-full bg-black text-white py-3 px-4 rounded-lg font-bold hover:bg-gray-800 transition-colors text-center">
+          Hastalarınza Ulaşın
+        </a>
+        <!-- "Includes Guide" badge -->
+        <a href="#" class="absolute top-16 right-4 rotate-2 bg-[#FF4500] text-white text-xs font-semibold px-2 py-1 rounded-full shadow-sm flex items-center space-x-1">
+          <span>Haftalık</span>
+          <!-- File Icon SVG (scaled down) -->
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="file" 
+               class="svg-inline--fa fa-reddit text-white" role="img" xmlns="http://www.w3.org/2000/svg" 
+               viewBox="0 0 384 512" width="12" height="12">
+            <path fill="currentColor" d="M320 464c8.8 0 16-7.2 16-16l0-288-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l256 0zM0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64z"/>
+          </svg>
+          <span>Rapor</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- COMBO PACKAGE CARD -->
+    <div class="bg-[#F8F7F5] p-6 rounded-lg mb-8 sm:mb-12 relative">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="font-instrument-serif text-xl sm:text-2xl font-bold text-black">
+          Website + Dijital Pazarlama<span class="hidden sm:inline"> Paketi</span>
+        </h2>
+        <span class="bg-white text-[#7D7D7D] text-xs font-semibold px-2 py-1 rounded-full shadow-sm">
+            Avantaj
+        </span>
+      </div>
+      <div class="mb-4">
+        <div class="flex items-center">
+          <p class="text-2xl font-bold text-black mr-2">28.000TL</p>
+          <span class="text-[11px] font-semibold text-[#7D7D7D] bg-[#F0EDE9] px-2 py-0.5 rounded-full shadow-sm hidden sm:inline-block transform rotate-2">
+            aylık
+          </span>
+        </div>
+        <p class="text-xs font-normal text-[#7D7D7D] mt-1">İlk ay websitesi kurulum ücreti <span class="line-through">25.000TL</span> yerine 20.000TL</p>
+      </div>
+      <ul class="space-y-2 mb-6">
+        <li>• Profesyonel Web Sitesi ve Dijital Pazarlama hizmetlerinin tamamı dahil</li>
+        <li class="flex items-center text-black">
+          • İki pakete birden indirimli erişim
+          <span class="ml-2 text-center text-[11px] sm:text-xs -rotate-2 font-semibold text-green-700 bg-green-100 px-3 py-0.5 rounded-full shadow-sm inline-block whitespace-nowrap">
+            2.000TL İndirim
+          </span>
+        </li>
+        <li>• Web siteniz en geç 4 hafta yerine sadece en geç 2 haftada yayında</li>
+        <li>• Tüm süreci biz yönetelim — Size sadece hastalarınıza odaklanmak kalsın</li>
+        <li>• Öncelikli destek — Saatler içinde yanıt alın</li>
+        <li>• 30 gün para iade garantisi — Memnun kalmazsanız ücretinizi iade ediyoruz</li>
+      </ul>
+      <a href="https://cal.com/creaffin/15dk" target="_blank" rel="noopener noreferrer" 
+         class="block w-full py-3 px-4 text-white font-bold text-center rounded-lg rainbow-glow z-10">
+         Muayenehanenizi Büyütmeye Başlayın
+      </a>
+      <a href="#" class="absolute top-16 right-4 rotate-2 bg-[#FF4500] text-white text-xs font-semibold px-2 py-1 rounded-full shadow-sm flex items-center space-x-1">
+        <span>Haftalık</span>
+        <!-- Reddit Icon SVG (again scaled down) -->
+        <!-- File Icon SVG (scaled down) -->
+        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="file" 
+        class="svg-inline--fa fa-reddit text-white" role="img" xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 384 512" width="12" height="12">
+            <path fill="currentColor" d="M320 464c8.8 0 16-7.2 16-16l0-288-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l256 0zM0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64z"/>
+        </svg>
+        <span>Rapor</span>
+      </a>
+    </div>
+
+    <!-- SUCCESS STORIES SECTION -->
+    <div class="mb-8 sm:mb-12">
+      <h2 class="font-instrument-serif text-[28px] sm:text-3xl md:text-4xl text-black font-normal leading-tight mb-8">Başarı Hikayeleri</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Success Story 1 -->
+        <div class="bg-[#F8F7F5] p-6 rounded-lg relative">
+          <div class="flex items-start mb-4">
+            <img src="images/drtalha.png" alt="Op. Dr. Talha Ayvaz" class="w-16 h-16 rounded-full mr-4 shadow-sm" />
+            <div>
+              <h3 class="font-bold text-black text-md">Op. Dr. Talha Ayvaz</h3>
+              <p class="text-xs text-[#7D7D7D]">Kadın Hastalıkları ve Doğum, Eskişehir</p>
+            </div>
+          </div>
+          <p>"Creaffin ile çalışmadan önce aylık sadece 15-20 yeni hasta alıyordum. Eski, bir çok yeri çalışmayan sitemizi yeniledikten ve dijital pazarlama stratejilerini uyguladıktan sonra, bu sayı 60-70'lere yükseldi. Hastalarım artık beni internette kolayca bulabiliyorlar. En güzel tarafı hiç bir şeye vakit ayırmama gerek olmadı, sadece ne tedavileri sunduğumu söyledim ve 1 hafta içerisinde her şey hazırdı!"</p>
+          <div class="mt-4 flex">
+            <div class="flex items-center">
+              <span class="text-xl font-bold text-black mr-2">3X</span>
+              <span class="text-xs text-[#7D7D7D]">Randevu artışı</span>
+            </div>
+            <div class="w-px h-6 bg-gray-300 mx-4"></div>
+            <div class="flex items-center">
+              <span class="text-xl font-bold text-black mr-2">2.</span>
+              <span class="text-xs text-[#7D7D7D]">Ayda sonuç</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Success Story 2 -->
+        <div class="bg-[#F8F7F5] p-6 rounded-lg relative">
+          <div class="flex items-start mb-4">
+            <img src="images/drdogukan.png" alt="Op. Dr. H. Doğukan Özkan" class="w-16 h-16 rounded-full mr-4 shadow-sm" />
+            <div>
+              <h3 class="font-bold text-black text-md">Op. Dr. H. Doğukan Özkan</h3>
+              <p class="text-xs text-[#7D7D7D]">Kadın Hastalıkları, Doğum ve Tüp Bebek Uzmanı, Ankara</p>
+            </div>
+          </div>
+          <p>"Muayenehanem için yaptırdığım web sitesi beklentilerimin ötesinde. Tam olarak istediğim siteye kavuştum, 80'den fazla yazımı yayınladım ve kendim kullanacabileceğim kadar basit bir arayüzde yeni yazılarımı yayınlamaya devam ediyorum, tüm isteklerime 1 saatten kısa sürede cevap alıyorum. En kısa sürede dijital pazarlama paketine geçiş yapacağım! Kesinlikle tavsiye ederim."</p>
+          <div class="mt-4 flex">
+            <div class="flex items-center">
+              <span class="text-xl font-bold text-black mr-2">80+</span>
+              <span class="text-xs text-[#7D7D7D]">Makale</span>
+            </div>
+            <div class="w-px h-6 bg-gray-300 mx-4"></div>
+            <div class="flex items-center">
+              <span class="text-xl font-bold text-black mr-2">2.</span>
+              <span class="text-xs text-[#7D7D7D]">Haftada teslim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="mb-16">
+      <h2 class="font-instrument-serif text-[28px] sm:text-3xl md:text-4xl text-black font-normal leading-tight mb-8">Sık Sorulan Sorular</h2>
+      
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Web sitemi ne kadar sürede teslim edeceksiniz?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Web sitenizi genellikle 2-4 hafta içerisinde teslim ediyoruz. Bu süre, projenin karmaşıklığına ve içerik hazırlığına göre değişebilir. Kombo paketimizle bu süreyi en fazla 2 haftaya indiriyoruz. Takvimimizi size özel oluşturuyor ve düzenli güncellemelerle süreç hakkında sizi bilgilendiriyoruz.</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Reklam bütçemi nasıl belirlemeliyim?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Reklam bütçeniz hedeflerinize, bulunduğunuz bölgeye ve uzmanlık alanınıza göre değişir. Genellikle doktorlarımız aylık 10.000-25.000 TL arasında bir reklam bütçesi ayırıyor. Sizinle bir strateji toplantısı yaparak, optimal bütçeyi birlikte belirleyeceğiz. Ayrıca, reklam performansını düzenli raporlarla takip ediyor ve gerektiğinde stratejimizi optimize ediyoruz.</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Web siteme ben de içerik ekleyebilir miyim?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Elbette! Size kullanımı kolay bir yönetim paneli sunuyoruz ve gerekli eğitimi veriyoruz. Dilediğiniz zaman yeni içerikler ekleyebilir, mevcut içerikleri güncelleyebilirsiniz. Ancak, çoğu müşterimiz zaman kısıtlaması nedeniyle içerik yönetimini tamamen bize bırakmayı tercih ediyor. Profesyonel içerik ekibimiz, SEO'ya uygun ve hastalarınızı etkileyecek içerikler üretiyor.</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Aylık ödemelerim neleri kapsıyor?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Aylık ödemeleriniz şunları kapsar: Web sitenizin hosting hizmeti, güvenlik güncellemeleri, teknik bakım, haftalık blog yazıları, aylık performans raporları ve öncelikli destek. Web sitenizin her zaman hızlı, güvenli ve güncel kalmasını sağlıyoruz. Dijital pazarlama hizmetimiz ise reklam yönetimi, teknik seo çalışmaları, içerik stratejisi ve haftalık raporlamaları içerir. (Reklam bütçesi hariçtir.)</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 5 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Sözleşme süresi ne kadar ve nasıl iptal edebilirim?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Hizmetlerimiz için minimum taahhüt süremiz bulunmuyor. İstediğiniz zaman bir sonraki ay için iptal edebilirsiniz. Sadece 15 gün önceden bize bilgi vermeniz yeterli. Ayrıca, web sitesi hizmetimiz 30 gün para iade garantisi ile sunulmaktadır. Eğer ilk 30 gün içinde memnun kalmazsanız, ödemenizi iade ediyoruz. Sizin memnuniyetiniz bizim için en önemli öncelik.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Randevularımı nasıl yöneteceğim?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Mevcut randevu düzeninizi değiştirmenize gerek yok! Siz değil biz size uyum sağlıyoruz. Dilerseniz telefon ile, dilerseniz whatsapp ile, dilerseniz de mail ile, dilerseniz sitenizdeki bir form ile ya da doktorsitesi gibi 3. parti yazılımlardan randevu kabul edebilirsiniz.</p>
+            </div>
+          </details>
+        </div>
+
+         <!-- FAQ Item 7 -->
+        <div class="bg-[#F8F7F5] rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 font-medium cursor-pointer list-none">
+              <span class="text-black font-bold">Aynı bölge ve uzmanlık alanında birden fazla doktora hizmet veriliyor mu?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0">
+              <p>Hayır, aynı bölge ve branşa sahip yalnızca bir doktorla çalışıyoruz. Bu sayede, rekabeti önlüyoruz.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-20 border-t border-gray-200 pt-8">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+      <!-- Left Brand Section -->
+      <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+        <img 
+          src="images/logo.svg" 
+          alt="Logo" 
+          class="hover:animate-pulse rotate-12 mr-2" 
+          width="20" 
+          height="20" 
+        />
+        <h2 class="font-instrument-serif text-xl text-black">Creaffin</h2>
+      </div>
+  
+      <!-- Right Nav Columns -->
+      <!-- Use flex-col on mobile and switch to flex-row at sm breakpoint -->
+      <div class="flex flex-col sm:flex-row sm:space-x-12 sm:flex-nowrap">
+        <!-- Support Nav -->
+        <nav class="mb-6 sm:mb-0">
+          <h3 class="font-bold text-black mb-2">Destek</h3>
+          <a 
+            href="mailto:creaffin@creaffin.com" 
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            creaffin@creaffin.com
+          </a>
+          <a 
+            href="#" 
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            Gizlilik Politikası
+          </a>
+        </nav>
+  
+        <!-- Resources Nav -->
+        <nav class="mb-6 sm:mb-0">
+          <h3 class="font-bold text-black mb-2">Kaynaklar</h3>
+          <a 
+            href="#" 
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            Blog
+          </a>
+          <a 
+            href="#" 
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            Rehberler
+          </a>
+          <a 
+            href="#" 
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            Araçlar
+          </a>
+          <a 
+            href="#" 
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            E-kitaplar
+          </a>
+        </nav>
+  
+        <!-- Diğer ürünlerimiz Nav -->
+        <!--
+        <nav>
+          <h3 class="font-bold text-black mb-2">Diğer ürünlerimiz</h3>
+          <a 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            RelaxHR
+          </a>
+          <a 
+            href="https://plakatr.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-[#333333] hover:text-black transition-colors block"
+          >
+            PlakaTR
+          </a>
+        </nav>
+        -->
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <p class="text-center mt-8 text-xs text-[#7D7D7D]">
+      © 2025 Creaffin. Tüm hakları saklıdır.
+    </p>
+  </footer>
+<!-- 100% privacy-first analytics -->
+<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>
